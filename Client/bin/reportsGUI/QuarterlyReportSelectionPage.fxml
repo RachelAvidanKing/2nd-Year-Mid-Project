@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@/uiDesignComponents/PageDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportsGUI.QuarterlyReportSelectionPage">
+	<children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="750.0">
+                     <children>
+                  		<Label prefHeight="53.0" prefWidth="269.0" text="Quarterly Report">
+                  			<font>
+                  				<Font name="Bell MT" size="30.0" />
+                  			</font>
+                  		</Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <VBox prefHeight="304.0" prefWidth="307.0" spacing="10.0">
+                           <children>
+                        		<Label prefHeight="25.0" prefWidth="85.0" text="* Branch:">
+                        			<font>
+                        				<Font name="Bell MT" size="20.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseBranch" onAction="#branchSelected" prefWidth="150.0" promptText="Select Branch" />
+                        		<Label prefHeight="24.0" prefWidth="97.0" text="* Year:">
+                        			<font>
+                        				<Font name="Bell MT" size="20.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseYear" onAction="#yearSelected" prefWidth="150.0" promptText="Select year" />
+                        		<Label prefHeight="24.0" prefWidth="101.0" text="* Quarter:">
+                        			<font>
+                        				<Font name="Bell MT" size="20.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseQuarter" onAction="#quarterSelected" prefWidth="150.0" promptText="Select Quarter" />
+                        		<Button fx:id="btnShow" mnemonicParsing="false" onAction="#btnShowClick" prefHeight="39.0" prefWidth="85.0" text="Show">
+                        			<font>
+                        				<Font name="Bell MT Bold" size="17.0" />
+                        			</font>
+                        		</Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="265.0" prefWidth="315.0" spacing="75.0">
+                           <children>
+                        		<Label fx:id="lblBranchError" prefHeight="17.0" prefWidth="248.0" textFill="RED" />
+                        		<Label fx:id="lblYearError" prefHeight="17.0" prefWidth="248.0" textFill="RED" />
+                        		<Label fx:id="lblQuarterError" prefHeight="17.0" prefWidth="248.0" textFill="RED" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="467.0" spacing="10.0">
+                           <children>
+                        		<Label text="To view 2 reports just do the selection again and press show!">
+                        			<font>
+                        				<Font size="14.0" />
+                        			</font>
+                        		</Label>
+                        		<Label fx:id="lblShowError" prefHeight="17.0" prefWidth="523.0" textFill="RED" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="600.0" prefWidth="240.0" styleClass="left-bar" stylesheets="@/managerGUI/ApproveUsersPage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="150.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="53.0" text="Bite" textFill="#d07979">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="Me" textFill="#fd9999">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="230.0" stylesheets="@/managerGUI/ApproveUsersPage.css">
+                     <opaqueInsets>
+                        <Insets left="50.0" right="50.0" />
+                     </opaqueInsets>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="272.0" prefWidth="199.0">
+                           <children>
+                              <ImageView fx:id="imgProfilePicture" fitHeight="157.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/managerGUI/profilepicPlaceHolder.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox prefHeight="37.0" prefWidth="199.0" />
+                              <Label fx:id="lblUserName" stylesheets="@/managerGUI/ApproveUsersPage.css" text="User Name">
+                                 <font>
+                                    <Font name="Segoe UI" size="12.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="10.0" layoutY="167.0" prefHeight="23.0" prefWidth="199.0" />
+                              <Label fx:id="lblUserRole" text="User Role" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="left-menu" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+            		<Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="39.0" prefWidth="66.0" text="Back">
+            			<font>
+            				<Font name="Bell MT Bold" size="13.0" />
+            			</font>
+            		</Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+	</children>
+</AnchorPane>

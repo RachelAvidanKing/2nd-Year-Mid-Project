@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="lbl" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="561.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGui.OrderPage">
+   <children>
+      <Label layoutX="186.0" layoutY="14.0" prefHeight="70.0" prefWidth="178.0" text="Order Page">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="109.0" text="Which restaurant would you like to order from?">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbChooseRestaurant" layoutX="36.0" layoutY="148.0" prefWidth="150.0" promptText="Choose..." style="-fx-background-color: #f6ebe9;" />
+      <Label layoutX="31.0" layoutY="201.0" text="When do you want to get your order?">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNext" layoutX="447.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="33.0" prefWidth="62.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="Next">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="36.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnBack" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="Back to main screen">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font></Button>
+      <TextField fx:id="Min" layoutX="111.0" layoutY="253.0" prefHeight="25.0" prefWidth="39.0" promptText="mm" />
+      <TextField fx:id="Hour" layoutX="48.0" layoutY="253.0" prefHeight="25.0" prefWidth="39.0" promptText="hh" />
+      <Label layoutX="97.0" layoutY="258.0" prefWidth="5.0" text=":" />
+      <Label fx:id="labelErrorMessage" layoutX="227.0" layoutY="329.0" prefHeight="17.0" prefWidth="178.0" />
+   </children>
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="561.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGuiCEO.showOrderGui">
+   <children>
+      <Label layoutX="194.0" layoutY="52.0" prefHeight="53.0" prefWidth="166.0" text="CEO Page:">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Label id="lblRestaurant" layoutX="64.0" layoutY="122.0" prefHeight="53.0" prefWidth="117.0" text="Branch:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnLogOut" fx:id="btnLogOut" layoutX="450.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="36.0" prefWidth="82.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="LogOut">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMountly" layoutX="292.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnMountlyReport" prefHeight="45.0" prefWidth="107.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="mountly">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbChooseBranch" layoutX="185.0" layoutY="133.0" prefHeight="31.0" prefWidth="173.0" />
+      <Button fx:id="btnQuarterly" layoutX="123.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnQuarterlyReport" prefHeight="45.0" prefWidth="107.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="quarterly">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

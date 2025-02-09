@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@/uiDesignComponents/PageDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportsGUI.MonthlyReportSelectionPage">
+	<children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="600.0" prefWidth="240.0" styleClass="left-bar" stylesheets="@/managerGUI/ApproveUsersPage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="150.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="53.0" text="Bite" textFill="#d07979">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="Me" textFill="#fd9999">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="230.0" stylesheets="@/managerGUI/ApproveUsersPage.css">
+                     <opaqueInsets>
+                        <Insets left="50.0" right="50.0" />
+                     </opaqueInsets>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="272.0" prefWidth="199.0">
+                           <children>
+                              <ImageView fx:id="imgProfilePicture" fitHeight="157.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/managerGUI/profilepicPlaceHolder.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox prefHeight="37.0" prefWidth="199.0" />
+                              <Label fx:id="lblUserName" stylesheets="@/managerGUI/ApproveUsersPage.css" text="User Name">
+                                 <font>
+                                    <Font name="Segoe UI" size="12.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutX="10.0" layoutY="167.0" prefHeight="23.0" prefWidth="199.0" />
+                              <Label fx:id="lblUserRole" text="User Role" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="left-menu" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+            		<Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="43.0" prefWidth="62.0" text="Back">
+            			<font>
+            				<Font name="Bell MT Bold" size="16.0" />
+            			</font>
+                     <styleClass>
+                        <String fx:value="button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+            		</Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="65.0" prefWidth="760.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                  		<Label prefHeight="31.0" prefWidth="187.0" text="Monthly Reports ">
+                  			<font>
+                  				<Font name="Bell MT Bold" size="24.0" />
+                  			</font>
+                  		</Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="265.0" prefWidth="760.0">
+                     <children>
+                        <VBox prefHeight="259.0" prefWidth="537.0">
+                           <children>
+                        		<Label prefHeight="26.0" prefWidth="296.0" text="What type of report would you like to view?">
+                        			<font>
+                        				<Font name="Bell MT" size="16.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseType" prefWidth="150.0" promptText="Select type" />
+                        		<Label prefHeight="26.0" prefWidth="401.0" text="What year would you like your report to contain data from?">
+                        			<font>
+                        				<Font name="Bell MT" size="16.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseYear" onAction="#YearChanged" prefWidth="150.0" promptText="Select year" />
+                        		<Label prefHeight="26.0" prefWidth="363.0" text="What month would you like to display statistics from?">
+                        			<font>
+                        				<Font name="Bell MT" size="16.0" />
+                        			</font>
+                        		</Label>
+                        		<ComboBox fx:id="cmbChooseMonth" prefWidth="150.0" promptText="Select month" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                  		<Button fx:id="btnShow" mnemonicParsing="false" onAction="#btnShowClick" prefHeight="43.0" prefWidth="62.0" text="Show">
+                  			<font>
+                  				<Font name="Bell MT Bold" size="16.0" />
+                  			</font>
+                           <styleClass>
+                              <String fx:value="button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                  		</Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                  		<Label fx:id="lblError" prefHeight="26.0" prefWidth="401.0" textFill="RED">
+                  			<font>
+                  				<Font name="Bell MT" size="16.0" />
+                  			</font>
+                  		</Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+	</children>
+</AnchorPane>

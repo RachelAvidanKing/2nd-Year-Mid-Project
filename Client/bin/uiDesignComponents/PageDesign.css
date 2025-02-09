@@ -1,0 +1,360 @@
+.label {
+	-fx-font-family: "Segoe UI", sans-serif;
+}
+
+.left-bar {
+    -fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFB6C1);
+    -fx-padding: 10.0px;
+}
+
+.left-menu {
+    -fx-background-color: WHITE;
+    -fx-background-radius: 30.0;
+    -fx-padding: 15.0px;
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 15.0, 0.0, 0.0, 5.0);
+}
+/*----------------------------------------------------------------------------------------------------------------------------- */
+.shadow {
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.15), 15.0, 0.0, 0.0, 10.0);
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 15.0px;
+}
+.button {
+	-fx-pref-height: 50.0px;
+    -fx-pref-width: 180.0px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: white;
+    -fx-background-radius: 30.0px;
+    -fx-padding: 10.0px 20.0px;
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.2), 10.0, 0.0, 0.0, 5.0);
+    -fx-font-weight: normal;
+    -fx-font-size: 16.0px;
+}
+.table-view {
+	-fx-background-color: transparent;
+}
+
+.title {
+	-fx-font-family: "Segoe UI", sans-serif;
+	-fx-text-fill: #db8f8f;
+	-fx-font-weight: bold;
+	-fx-font-size: 36.0px;
+}
+
+/* PieChart Styles */
+.pie-chart {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+.chart-pie {
+    -fx-pie-label-visible: true;
+    -fx-pie-label-line-length: 15px;
+    -fx-pie-start-angle: 90;
+}
+
+.chart-pie-label {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #444444;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.75), 2, 0, 0, 1);
+}
+
+/* Pie slice colors */
+.default-color0.chart-pie {
+    -fx-pie-color: #9BC53D; /* Vibrant Green */
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #C3423F; /* Deep Red */
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #FDE74C; /* Bright Yellow */
+}
+
+.default-color3.chart-pie {
+    -fx-pie-color: #5BC0EB; /* Soft Blue */
+}
+
+.default-color4.chart-pie {
+    -fx-pie-color: #404E4D; /* Dark Slate */
+}
+
+.default-color5.chart-pie {
+    -fx-pie-color: #F18805; /* Warm Orange */
+}
+
+.default-color6.chart-pie {
+    -fx-pie-color: #E63946; /* Muted Red */
+}
+
+.default-color7.chart-pie {
+    -fx-pie-color: #283618; /* Deep Olive */
+}
+
+.chart-legend {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #444444;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* BarChart Styles */
+.bar-chart {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+}
+
+.chart-legend {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #444444;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.axis {
+    -fx-tick-label-fill: #555555; /* Tick label color */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 12px;
+}
+
+.axis-label {
+    -fx-text-fill: #333333; /* Axis label color */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #1B998B; /* Teal */
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: #E84855; /* Coral Red */
+}
+
+.default-color2.chart-bar {
+    -fx-bar-fill: #F9DC5C; /* Yellow */
+}
+
+.default-color3.chart-bar {
+    -fx-bar-fill: #3A506B; /* Dark Blue */
+}
+
+.default-color4.chart-bar {
+    -fx-bar-fill: #5BC0EB; /* Sky Blue */
+}
+
+.default-color5.chart-bar {
+    -fx-bar-fill: #6B4226; /* Brown */
+}
+
+.chart-bar {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0, 2, 2); /* Subtle shadow for bars */
+}
+
+.chart-title {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.combo-box-base {
+    -fx-background-color: white;
+    -fx-background-radius: 30.0px;
+   
+    -fx-font-weight: normal;
+    -fx-font-size: 12px;
+    -fx-pref-height: 8px;
+    -fx-pref-width: 215px;
+    -fx-border-radius: 30.0px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10.0, 0.0, 0.0, 5.0);
+}
+
+.combo-box .arrow {
+    -fx-background-color: #444444;
+    -fx-background-radius: 15px;
+    -fx-pref-width: 10px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: white;
+    -fx-background-radius: 0 30.0px 30.0px 0;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+.combo-box:hover .arrow-button {
+    -fx-background-color: #F0F0F0;
+}
+
+.combo-box:focused .combo-box-base {
+    -fx-border-color: #CCCCCC; /* Subtle border on focus */
+}
+
+.combo-box .list-cell {
+    -fx-padding: 10.0px 20.0px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-text-fill: #444444;
+    -fx-background-radius: 30.0px;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #F0F0F0; /* Light gray background on hover */
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 30.0px;
+    -fx-padding: 5px;
+}
+
+.combo-box .list-view:focused {
+    -fx-border-color: transparent; /* Remove border on focus */
+}
+/* BUTTON ANIMATIONS */
+/* Button Styling */
+.button {
+    -fx-pref-height: 50.0px;
+    -fx-pref-width: 180.0px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: white;
+    -fx-background-radius: 30.0px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10.0, 0.0, 0.0, 5.0);
+    -fx-font-weight: normal;
+    -fx-font-size: 14.0px;
+    -fx-border-radius: 30.0px;
+    -fx-transition: fadeIn 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    -fx-background-color: #F0F0F0; /* Light gray on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10.0, 0.0, 0.0, 8.0); /* Stronger shadow on hover */
+    -fx-cursor: hand; /* Change cursor to hand */
+    -fx-transition: background-color 0.3s ease-in-out, -fx-effect 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Button Press Effect */
+.button:pressed {
+    -fx-background-color: #E6E6E6; /* Slightly darker gray when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10.0, 0.0, 0.0, 5.0); /* Enhanced shadow effect */
+    -fx-translate-y: 2px; /* Button presses down slightly */
+    -fx-transition: background-color 0.1s ease-in-out, -fx-effect 0.1s ease-in-out, -fx-translate-y 0.1s ease-in-out; /* Quick press effect */
+}
+
+/* TEXTFIELD */
+/* TextField Styling */
+.text-field {
+    -fx-pref-height: 50.0px;
+    -fx-max-height: 50.0px;
+    -fx-pref-width: 180.0px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-background-radius: 10.0px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10.0px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10.0, 0.0, 0.0, 5.0);
+    -fx-transition: background-color 0.3s ease-in-out, -fx-effect 0.3s ease-in-out;
+}
+
+/* TextField Hover Effect */
+.text-field:hover {
+    -fx-border-color: #999999; /* Darker border on hover */
+}
+
+/* TextField Disabled State */
+.text-field:disabled {
+    -fx-background-color: #E0E0E0; /* Light gray background for disabled state */
+    -fx-text-fill: #A0A0A0; /* Gray text */
+    -fx-border-color: #C0C0C0; /* Gray border */
+    -fx-effect: none; /* No shadow effect */
+}
+
+/* Placeholder Text Styling */
+.text-field .prompt-text {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #888888; /* Placeholder text color */
+}
+/* TOGGLE BUTTON */
+/* ToggleButton Styling */
+.toggle-button {
+    -fx-pref-height: 30px;
+    -fx-pref-width: 60px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16.0px;
+    -fx-background-color: white;
+    -fx-background-radius: 30.0px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 30.0px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10.0, 0.0, 0.0, 5.0);
+    -fx-transition: background-color 0.3s ease-in-out, -fx-effect 0.3s ease-in-out;
+}
+
+/* ToggleButton Hover Effect */
+.toggle-button:hover {
+    -fx-background-color: #F0F0F0; /* Light gray on hover */
+    -fx-border-color: #999999; /* Darker border on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10.0, 0.0, 0.0, 8.0); /* Stronger shadow on hover */
+    -fx-cursor: hand; /* Change cursor to hand */
+    -fx-transition: background-color 0.3s ease-in-out, -fx-effect 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* ToggleButton Press Effect */
+.toggle-button:pressed {
+    -fx-background-color: #E6E6E6; /* Slightly darker gray when pressed */
+    -fx-border-color: #999999; /* Darker border on press */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10.0, 0.0, 0.0, 5.0); /* Enhanced shadow effect */
+    -fx-translate-y: 2px; /* Button presses down slightly */
+    -fx-transition: background-color 0.1s ease-in-out, -fx-effect 0.1s ease-in-out, -fx-translate-y 0.1s ease-in-out; /* Quick press effect */
+}
+
+/* ToggleButton Selected State */
+.toggle-button:selected {
+    -fx-background-color: #1B998B; /* Teal background for selected state */
+    -fx-text-fill: white; /* White text for contrast */
+    -fx-border-color: transparent; /* Remove border in selected state */
+}
+
+/* ToggleButton Disabled State */
+.toggle-button:disabled {
+    -fx-background-color: #E0E0E0; /* Light gray background for disabled state */
+    -fx-text-fill: #A0A0A0; /* Gray text */
+    -fx-border-color: #C0C0C0; /* Gray border */
+    -fx-effect: none; /* No shadow effect */
+}
+
+
