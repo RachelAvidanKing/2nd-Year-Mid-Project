@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="869.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGui.ApproveOrderClient">
+   <children>
+      <Label layoutX="264.0" layoutY="37.0" prefHeight="71.0" prefWidth="371.0" text="User Active Orders Page">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="90.0" layoutY="108.0" prefHeight="253.0" prefWidth="702.0">
+        <columns>
+          <TableColumn fx:id="ordernumber" prefWidth="243.0" text="Order Number" />
+          <TableColumn fx:id="orderPlacedTime" prefWidth="255.0" text="Date of order" />
+            <TableColumn fx:id="orderStatus" prefWidth="202.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="145.0" layoutY="429.0" prefHeight="47.0" prefWidth="267.0" text="Choose order to approve receiving:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <ComboBox fx:id="orderapprove" layoutX="435.0" layoutY="440.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Button fx:id="btnapprove" layoutX="656.0" layoutY="436.0" mnemonicParsing="false" onAction="#updateStatus" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="Appprove">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="25.0" layoutY="535.0" mnemonicParsing="false" onAction="#btnBack" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="Back to main screen">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="message" layoutX="254.0" layoutY="510.0" prefHeight="25.0" prefWidth="466.0" style="-fx-background-color: #FADDD7;" />
+      <Label layoutX="145.0" layoutY="461.0" text="please note: you can only approced 'Ready' orders" />
+      <TextField fx:id="message1" layoutX="264.0" layoutY="539.0" prefHeight="25.0" prefWidth="466.0" style="-fx-background-color: #FADDD7;" />
+   </children>
+</AnchorPane>

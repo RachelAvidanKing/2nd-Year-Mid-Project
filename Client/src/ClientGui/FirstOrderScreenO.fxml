@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="598.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGui.FirstOrderPage">
+   <children>
+      <Label layoutX="209.0" layoutY="33.0" prefHeight="71.0" prefWidth="371.0" text="Welcome:)">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStartOrder" layoutX="213.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnStartOrder" prefHeight="60.0" prefWidth="156.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Start Order">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnApproveOrder" layoutX="209.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnApproveOrder" prefHeight="60.0" prefWidth="163.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Approve Order">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" layoutX="380.0" layoutY="373.0" prefHeight="17.0" prefWidth="212.0" textFill="#e80f0f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="104.0" prefHeight="17.0" prefWidth="145.0" text="Please choose an action." />
+      <Button fx:id="btnLogOut" layoutX="209.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="60.0" prefWidth="163.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Logout">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

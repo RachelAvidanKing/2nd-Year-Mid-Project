@@ -1,0 +1,27 @@
+.left-bar {
+    -fx-background-color: #FADDD7;
+    -fx-padding: 10.0px;
+}
+
+.left-menu {
+    -fx-background-color: #AA336A;
+    -fx-background-radius: 30.0;
+    -fx-padding: 15.0px;
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 15.0, 0.0, 0.0, 5.0);
+}
+
+.shadow {
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.15), 15.0, 0.0, 0.0, 10.0);
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 15.0px;
+}
+.button {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: white;
+    -fx-background-radius: 30.0px;
+    -fx-padding: 10.0px 20.0px;
+    -fx-effect: dropShadow(gaussian, rgba(0.0, 0.0, 0.0, 0.2), 10.0, 0.0, 0.0, 5.0);
+}
+.table-view {
+	-fx-background-color: transparent;
+}
